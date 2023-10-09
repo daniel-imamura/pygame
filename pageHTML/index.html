@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <script type="text/javascript" src="script.js"></script>
+
+    <h1 style="text-align:center;margin: 50px;font-size:50px">Formulário</h1>
+
+    <div class="container">
+        <form action="http://192.168.0.24:8080/insere" method="post" id="formInsere">
+            <label>Nome:</label>
+            <input type="text" name="nome">
+            <label>Data:</label>
+            <input type="datetime-local" name="data_hora">
+            <input type="submit" onClick="Inserir()" value="Inserir">
+        </form>
+        <br>
+        <form action="http://192.168.0.24:8080/getLista" method="get" id="formListar">
+            <input type="submit" name="submit_button" value="Listar">
+        </form>
+        <br>
+        <form action="http://192.168.0.24:8080/getDetalhe" method="get">
+            <label>Id:</label>
+            <input type="text" name="id">
+            <input type="submit" name="submit_button" value="BuscarPorId" id="btnBuscar">
+        </form>
+        <br>
+        <form action="http://192.168.0.24:8080/apagaID" method="post">
+            <label>Id:</label>
+            <input type="text" name="id">
+            <input type="submit" name="submit_button" value="Excluir" id="btnExcluir">
+        </form>
+        <br>
+        <h3>Animações:</h3>
+        <br>
+        <form action="http://192.168.0.24:8080/animação" method="get">
+            <input type="submit" name="animacao" value="Baby Yoda">
+            <input type="submit" name="animacao" value="Sapo">
+            <input type="submit" name="animacao" value="Espirais">
+            <input type="submit" name="animacao" value="Galatica">
+        </form>
+    </div>
+</body>
+
+</html>

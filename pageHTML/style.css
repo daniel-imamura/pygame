@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(140, 206, 223);          
+}
+
+input {
+    height:20px;  
+    margin-right: 10px;  
+}
+
+input[type="submit"]{
+    height:30px;
+    width:90px    
+}
+
+.container {  
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(224, 224, 18);
+    border-radius: 15px;
+    box-shadow: 4px 4px rgb(85, 84, 84);
+    font: bold 15px Arial;
+}
+
+#formListar{
+    margin-left: 495px;
+}
+
+#btnBuscar {
+    margin: 0 -160px 0 115px;
+}
+
+#btnExcluir {
+    margin: 0 -160px 0 115px;
+}
